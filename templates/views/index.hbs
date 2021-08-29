@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href="css/style.css">
+
+</head>
+<body>
+    {{>header}}
+    {{!-- <h1><i>This is a dynamic handlebar html page coming right up from nodejs.</i></h1> --}}
+    <h2><i>{{title}}</i></h2>
+    {{!-- <h3>created by <i>{{name}}</i></h3> --}}
+    {{!-- <img src="img/download.jpg" class='portrait'> --}}
+    <form>
+        <input placeholder="enter location">
+        <button>Search</button>
+    </form>
+    <p id='msg1'></p>
+    <p id='msg2'></p>
+    {{>footer}}
+    <script src="js/sample.js"></script>
+</body>
+</html>
