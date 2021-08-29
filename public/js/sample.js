@@ -25,7 +25,7 @@ const msg2 = document.querySelector('#msg2');
       if(!search){
           return console.log("PLease enter location");
       }
-      var url = 'http://localhost:5000/weather?address='+search.value;
+      var url = 'weather?address='+search.value;
       console.log(search.value);
       fetch(url).then((response)=>{
     response.json().then((data)=>{
